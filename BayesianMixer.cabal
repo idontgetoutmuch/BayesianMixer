@@ -1,0 +1,39 @@
+name:                BayesianMixer
+
+version:             0.1.0.0
+
+license:             BSD3
+
+license-file:        LICENSE
+
+author:              Dominic Steinitz
+
+maintainer:          dominic@steinitz.org
+
+build-type:          Simple
+
+extra-source-files:  ChangeLog.md
+
+cabal-version:       >=1.18
+
+
+executable BayesianMixer
+  main-is:             Test.lhs
+
+  build-depends:       base >=4.10 && <4.11,
+                       mtl,
+                       monad-loops,
+                       vector,
+                       random-fu,
+                       histogram-fill,
+                       random-source,
+                       foldl,
+                       plots,
+                       diagrams-lib,
+                       diagrams-rasterific,
+                       cassava,
+                       bytestring,
+                       hmatrix,
+                       random-fu-multivariate,
+                       ad
+  default-language:    Haskell2010
